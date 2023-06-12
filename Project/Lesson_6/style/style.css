@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    padding: 10px;
+}
+ 
+.block p {
+    border: 1px solid red;
+}
+ 
+/* .block p:nth-child(1) */
+.block p:first-child {
+    color: red;
+    width: 100px;
+    height: 100px;
+}
+.block p:last-child {
+    color: blue;
+    width: 100px;
+    height: 60px;
+}
+.block p:nth-child(2) {
+    color: fuchsia;
+    width: 100px;
+    height: 60px;
+}
+.block p:nth-child(3) {
+    color: aquamarine;
+    width: 60px;
+    height: 60px;
+}
+.block p:nth-child(4) {
+    color: rosybrown;
+    width: 60px;
+    height: 100px;
+}
+ 
+/* <h2>Inline-Block</h2>
+    <div class="block inline">
+        <p>Block 1</p>
+        <p>Block 2</p>
+        <p>Block 3</p>
+        <p>Block 4</p>
+        <p>Block 5</p>
+    </div>
+  */
+
+  .inline p {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: bottom;
+  }
+  /* Inline-block — это значение, которые можно назначить свойству display. Название происходит от некоторых характеристик как строчного, так и блочного элементов. Блочные (block) элементы имеют высоту, ширину, padding, margin, border, а также располагаются вертикально, друг под другом */
+  .inline {
+    text-align: center;
+    font-size: 0;
+  }
+
+.flex div div {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: silver;
+}
+
+.flex div {
+    display: flex;
+     /* vertical   */
+    /* flex-direction: column; */
+    /* horizontal by default */ 
+    /* flex-direction: row; */
+    /* justify-content: space-evenly; */
+    /* justify-content: space-between; */
+    /* justify-content: center; */
+    /* justify-content: flex-end; */
+    /* justify-content: flex-start; */
+    /* justify-content: space-around; */
+}
+
+.flex .space_between {
+    justify-content: space-between;
+}
+
+.flex .space_evenly {
+    justify-content: space-evenly;
+}
+
+.flex .space_around {
+    justify-content: space-around;
+}
+
+.align_block {
+    border: 1px solid black;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    /* value by default */
+    /* align-items: stretch; */
+
+    align-items: center;
+    /* align-items */
+    /* align-items: flex-end; */
+    /* align-items: flex-start; */
+ 
+    justify-content: center;
+}
+
+/* git add *files*
+git commit -m "Message"
+git push origin main/ main name of branch */

@@ -1,0 +1,133 @@
+* {
+padding: 0;
+margin: 0;
+}
+
+body {
+    padding: 10%;
+}
+
+p {
+    border: 1px solid red;
+    margin-bottom: 5px;
+}
+
+.p1 {
+    width: 50%;
+}
+
+.p2 {
+    width: 50%;
+}
+
+ul {
+    padding-left: 40px;
+}
+
+li {
+    /* font-size: 2em; */
+    /* rem = root element */
+    font-size: 2rem;
+}
+
+.box {
+    /* 
+    vw = viewpoint width
+    vw = viewpoint height
+
+    width > height 
+    vmin = heigth
+    vmax = widht
+    
+    width < heigth
+    vmin = width
+    vmax = heigth
+     */
+
+    /* width: 50vh;
+    height: 50vw; */
+
+    width: 50vmax;
+    height: 50vmin;
+    border: 1px solid red;
+}
+ 
+.container {
+    height: 300px;
+    min-width: 400px;
+    max-width: 1100px;
+    border: 1px solid red;
+}
+
+/* Создать блок шириной 50% и высотой 400px Добавить внутренние отступы слева и справа (5%) а внешними (20%) и отступами сверху и снизу (внутренние 30px а внешние 40px). Добавьте черную рамку в 5px и добавьте border-box и посмотреть разницу */
+
+  .container2 {
+    width: 50%;
+    height: 400px;
+    padding: 30px 5%;
+    margin: 40px 20%;
+    border: 5px solid black;
+    box-sizing: border-box;
+    
+
+  }
+
+  /* .block {
+    width: 50%;
+    height: 400px;
+    padding: 30px 5%;
+    margin: 40px 20%;
+    border: 5px solid black;
+    /* box-sizing: border-box; 
+  }*/
+
+  /* background-color: red; */
+    /* ============ */
+    /* 0 1 2 3 4 5 6 7 8 9 A B C D E F */
+    /* c7 60 60 */
+    /* background-color: #b7ec9b; */
+
+    /* ============ */
+    /*
+        rgb
+        r = red
+        g = green
+        b = blue
+        [0...255]
+
+        rgba
+        a alfa => [0...1]
+     */
+     /* 2 ^ 8 = 256 */
+    /* background-color: rgb(255, 255, 255); */
+    /* background-color: rgba(255, 10, 10, 0.5); */
+
+    /* 
+1 Создать 3 div (разделы страницы)
+2 Все блоки сделать шириной 80% и максимальной шириной 1200 и высотой минимум 400 px. Выровнять по центру (margin: 0 auto). 
+3 Добавить внутренний отступ 20px со всех сторон и внешний только вертикальный 20px
+4 В первый блок добавить текст 
+5 Во второй блок добавить картинки с единым размером (200px на 300px) и отступом 20px.
+6 В третьем блоке добавить ссылки на 4 магазина (любых). Ссылки должны быть в виде кликабельных картинок 
+*/
+
+.cont {
+    width: 80%;
+    max-width: 1200px;
+    min-height: 400px; 
+    border: 1px solid green;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.cont img {
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.cont a {
+
+}
