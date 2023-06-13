@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 7</title>
+    <link rel="stylesheet" href="./Style/style.css">
+</head>
+<body>
+    <!-- https://tel-ran.de/?city=berlin&course=frontend
+    city=berlin
+    course=frontend
+ -->
+ <form method="get">
+    <!-- type = тип элемента input []
+    name - название поля в запросе-->
+    <label for="firstname_input">User Firstname</label>
+    <input type="text" name="firstname" placeholder="Firstname..." id="firstname_input">
+    
+    <label for="lastname_input">User Lastname</label>
+    <input type="text" name="lastname" placeholder="Lastname..." id="lastname_input">
+
+    <label for="about_me">About Me</label>
+    <textarea name="about_me" id="about_me" cols="15" rows="10"></textarea>
+
+    <select name="profession">
+        <option disabled selected>Select your profession</option>
+    <option value="manager">Manager</option>
+    <option value="developer">Developer</option>
+    <option disabled value="designer">Designer</option>
+    </select>
+
+    <div>
+        <label for="beer_checkbox">Beer</label>
+        <input type="checkbox" name="beer" id="beer_checkbox">
+        <label for="tea_checkbox">Tea</label>
+        <input type="checkbox" name="tea" id="tea_checkbox">
+        <label for="coffee_checkbox">Coffee</label>
+        <input type="checkbox" name="coffee" id="coffee_checkbox">
+    </div>
+
+    <div>
+        <label for="beer_radio">Beer</label>
+        <input type="radio" name="beer_radio" id="beer">
+        <label for="tea_radio">Tea</label>
+        <input type="radio" name="tea" id="tea">
+        <label for="coffee_radio">Coffee</label>
+        <input type="radio" name="coffee" id="coffee">
+    </div>
+
+    <button>Send</button>
+ </form>
+</body>
+</html>

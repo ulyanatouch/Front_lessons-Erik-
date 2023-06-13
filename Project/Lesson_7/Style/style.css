@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+}
+
+/* selector = firstname_input
+id = #firstname_input
+class = .firstname_input
+*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid maroon;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+}
+
+form *:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+#firstname_input:focus,
+#lasname_input:focus,
+#about_me:focus {
+    outline: none;
+    box-shadow: 4px 5px 5px 2px black;
+}
+
+#firstname_input,
+#lasname_input,
+#about_me {
+    transition: box-shadow 2s, padding 2s;
+}
