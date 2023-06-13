@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.currency-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 300px;
+}
+
+.currency-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.currency-symbol {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.currency-name {
+  font-weight: bold;
+}
+
+/* tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+} */
+
+/* table {
+  border-collapse: collapse;
+  padding-inline: 30px;
+  margin: 20px 10px 20px 10px;
+} */
+
+/* table, td {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid black;
+  padding: 5px;
+} */
+table, tbody, td {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid black;
+  padding: 5px;
+}
