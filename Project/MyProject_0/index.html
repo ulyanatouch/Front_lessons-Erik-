@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Регистрация</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <form class="form">
+        <h2 class="form__title">Регистрация</h2>
+        <p class="form__subtitle">Уже есть аккаунт? <a href="#">Войти</a></p>
+
+        <div class="form__group">
+            <label for="name" class="form__label">Имя</label>
+            <input type="text" id="name" name="name" class="form__input" placeholder="Введите ваше имя">
+        </div>
+
+        <div class="form__group">
+            <label for="email" class="form__label">Email</label>
+            <input type="email" id="email" name="email" class="form__input" placeholder="Введите ваш email">
+        </div>
+
+        <div class="form__group">
+            <label for="password" class="form__label">Пароль</label>
+            <input type="password" id="password" name="password" class="form__input" placeholder="Введите ваш пароль">
+        </div>
+
+        <div class="form__group">
+            <label for="confirm-password" class="form__label">Подтверждение пароля</label>
+            <input type="password" id="confirm-password" name="confirm-password" class="form__input"
+                placeholder="Подтвердите ваш пароль">
+        </div>
+
+        <button type="submit" class="form__button">Зарегистрироваться</button>
+        <p class="form__text">Нажимая на кнопку "Зарегистрироваться", вы соглашаетесь с <a href="#">Правилами
+                использования</a> и <a href="#">Политикой конфиденциальности</a>.</p>
+    </form>
+
+</body>
+
+</html>
+
+
+
+<!-- <div class="modal_wrapper">
+        <span class="modal_wrapper_title">Регистрация</span>
+        <input type="email" class="modal_wrapper_input" />
+        <input type="password" class="modal_wrapper_input" />
+        <p class="modal_wrapper_text">
+          Регистрируясь на сайте, вы соглашаетесь с нашими Правилами и Политикой
+          конфиденциальности и соглашаетесь на информационную рассылку.
+        </p>
+        <button class="modal_wrapper_btn auth">Зарегистрироваться</button>
+        <button class="modal_wrapper_btn">Войти</button>
+      </div>
+  -->
